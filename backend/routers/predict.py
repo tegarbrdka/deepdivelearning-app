@@ -99,7 +99,7 @@ async def predict(
 
 
 @router.post("/predict/document/detailed")
-async def predict_document_detailed(
+def predict_document_detailed(
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
@@ -129,7 +129,7 @@ async def predict_document_detailed(
 
     # Validate file size (500MB max)
     MAX_FILE_SIZE = 500 * 1024 * 1024
-    file_content = await file.read()
+    file_content = file.file.read()
     if len(file_content) > MAX_FILE_SIZE:
         raise HTTPException(
             status_code=400,

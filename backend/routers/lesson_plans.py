@@ -24,7 +24,7 @@ ALLOWED_EXTENSIONS = {".pdf", ".docx", ".doc"}
 
 
 @router.post("/upload", response_model=LessonPlanUploadResponse)
-async def upload_lesson_plan(
+def upload_lesson_plan(
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
@@ -45,7 +45,7 @@ async def upload_lesson_plan(
     dest = UPLOAD_RPP_DIR / f"{file_id}_{file.filename}"
 
     # Save file
-    content = await file.read()
+    content = file.file.read()
     if not content:
         raise HTTPException(status_code=400, detail="File kosong atau tidak dapat dibaca.")
 
