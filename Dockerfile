@@ -23,5 +23,5 @@ EXPOSE 8000
 # Set Python path
 ENV PYTHONPATH=/app
 
-# Command to run the application
-CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Command to run the application (use 4 workers to prevent ML tasks from blocking the entire server)
+CMD ["uvicorn", "backend.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "4"]
