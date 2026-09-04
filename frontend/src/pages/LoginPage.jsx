@@ -113,15 +113,6 @@ export default function LoginPage() {
           </div>
         </motion.div>
 
-        {/* Demo credentials */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-          className="mt-4 p-3 rounded-xl bg-slate-50/60 border border-slate-200 text-xs text-slate-500 text-center"
-        >
-          Demo admin: <span className="text-slate-600 font-mono">admin / admin123</span>
-        </motion.div>
       </div>
     </div>
   )
