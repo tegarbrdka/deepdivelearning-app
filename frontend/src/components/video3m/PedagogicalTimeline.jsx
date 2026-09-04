@@ -336,7 +336,7 @@ const PedagogicalTimeline = ({
             name="Mindful"
             stroke="#3b82f6"
             strokeWidth={2}
-            dot={(props) => <ActiveDot {...props} activeFragmentIndex={activeFragmentIndex} baseColor="#3b82f6" />}
+            dot={(props) => <ActiveDot key={props.key || `dot-mindful-${props.index}`} {...props} activeFragmentIndex={activeFragmentIndex} baseColor="#3b82f6" />}
             activeDot={{ r: 7, fill: '#3b82f6' }}
           />
           <Line
@@ -345,7 +345,7 @@ const PedagogicalTimeline = ({
             name="Meaningful"
             stroke="#22c55e"
             strokeWidth={2}
-            dot={(props) => <ActiveDot {...props} activeFragmentIndex={activeFragmentIndex} baseColor="#22c55e" />}
+            dot={(props) => <ActiveDot key={props.key || `dot-meaningful-${props.index}`} {...props} activeFragmentIndex={activeFragmentIndex} baseColor="#22c55e" />}
             activeDot={{ r: 7, fill: '#22c55e' }}
           />
           <Line
@@ -354,7 +354,7 @@ const PedagogicalTimeline = ({
             name="Joyful"
             stroke="#f97316"
             strokeWidth={2}
-            dot={(props) => <ActiveDot {...props} activeFragmentIndex={activeFragmentIndex} baseColor="#f97316" />}
+            dot={(props) => <ActiveDot key={props.key || `dot-joyful-${props.index}`} {...props} activeFragmentIndex={activeFragmentIndex} baseColor="#f97316" />}
             activeDot={{ r: 7, fill: '#f97316' }}
           />
         </LineChart>
