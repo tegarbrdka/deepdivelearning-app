@@ -1,0 +1,68 @@
+{
+  "aktivasi_fokus": {
+    "strong": [
+      "STOP",
+      "hening",
+      "mindfulness",
+      "mindful breathing",
+      "merasakan nafas",
+      "identifikasi perasaan",
+      "fokus pada tubuh",
+      "kesiapan emosional",
+      "grounding",
+      "cek emosi",
+      "apa yang kamu rasakan",
+      "apa yang dirasakan",
+      "kesadaran diri",
+      "hening sejenak",
+      "pemeriksaan kesiapan emosional"
+    ],
+    "medium": [
+      "berdoa",
+      "tenang",
+      "fokus",
+      "siap belajar",
+      "konsentrasi"
+    ],
+    "weak": [
+      "absensi",
+      "presensi"
+    ]
+  },
+  "metakognisi": {
+    "strong": [
+      "bagaimana kamu tahu",
+      "apa hambatanmu",
+      "strategi apa yang kamu gunakan",
+      "refleksi proses",
+      "monitor diri",
+      "thinking about thinking",
+      "kesadaran berpikir",
+      "evaluasi diri",
+      "mendeteksi hambatan diri",
+      "bagaimana kamu belajar",
+      "apa yang masih membingungkan",
+      "proses berpikirnya sendiri",
+      "merefleksikan"
+    ],
+    "medium": [
+      "refleksi",
+      "evaluasi",
+      "review",
+      "merefleksikan"
+    ]
+  },
+  "kesadaran_fisik": {
+    "strong": [
+      "detak jantung",
+      "nafas",
+      "sensori",
+      "rasakan tubuhmu",
+      "posisi ergonomis",
+      "kenyamanan fisik",
+      "kondisi tubuh",
+      "kondisi fisik",
+      "sensori sebelum memulai"
+    ]
+  }
+}

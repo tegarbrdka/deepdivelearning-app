@@ -1,0 +1,48 @@
+{
+  "aktivator": {
+    "strong": [
+      "siswa menganalisis",
+      "siswa mengevaluasi",
+      "siswa mencipta",
+      "siswa merancang",
+      "siswa memecahkan masalah",
+      "memecahkan masalah",
+      "murid berdiskusi",
+      "murid merefleksikan",
+      "merefleksikan",
+      "murid mengeksplorasi",
+      "bagaimana jika",
+      "mengapa",
+      "apa yang terjadi jika",
+      "bandingkan",
+      "jelaskan alasanmu",
+      "siswa mengeksplorasi",
+      "murid menganalisis",
+      "murid mengevaluasi",
+      "murid mencipta",
+      "pertanyaan pemantik",
+      "guru memprovokasi pemikiran",
+      "guru sebagai aktivator"
+    ],
+    "medium": [
+      "siswa memahami",
+      "siswa menerapkan",
+      "murid mencoba",
+      "siswa belajar"
+    ],
+    "weak": [
+      "guru menjelaskan",
+      "guru menyampaikan",
+      "guru memberikan",
+      "guru mengajarkan",
+      "guru menerangkan",
+      "mendengarkan ceramah",
+      "mencatat",
+      "menyalin",
+      "mencatat pasif",
+      "mendengarkan penjelasan guru",
+      "guru dominan",
+      "teacher-centered"
+    ]
+  }
+}

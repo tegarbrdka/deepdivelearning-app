@@ -1,0 +1,51 @@
+{
+  "akselerasi": {
+    "strong": [
+      "simulasi",
+      "gamifikasi",
+      "kreasi konten",
+      "interaktif",
+      "kelas virtual",
+      "multimedia",
+      "AI assistant",
+      "percepatan",
+      "kolaborasi global",
+      "simulasi kompleks",
+      "virtual lab",
+      "augmented reality",
+      "coding",
+      "digital storytelling",
+      "PhET",
+      "Labster",
+      "virtual field trip",
+      "Google Earth",
+      "museum virtual",
+      "Scratch",
+      "Code.org"
+    ],
+    "medium": [
+      "kuiz digital",
+      "kahoot",
+      "quizizz",
+      "google classroom",
+      "video pembelajaran",
+      "e-learning",
+      "online",
+      "aplikasi",
+      "teknologi digital",
+      "Padlet",
+      "Jamboard",
+      "Canva",
+      "Powtoon"
+    ],
+    "weak": [
+      "powerpoint",
+      "PPT",
+      "slide",
+      "tayangan",
+      "PDF",
+      "tayangan PPT statik",
+      "substitusi alat tulis"
+    ]
+  }
+}

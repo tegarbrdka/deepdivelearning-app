@@ -1,0 +1,62 @@
+{
+  "flow": {
+    "strong": [
+      "tantangan",
+      "pilihan",
+      "choice",
+      "eksplorasi",
+      "eksperimen",
+      "berani mencoba",
+      "ruang salah",
+      "otonomi murid",
+      "permainan tradisional",
+      "tantangan kelompok",
+      "eksplorasi bebas",
+      "kesesuaian tingkat kesulitan",
+      "pilihan aktivitas",
+      "ruang untuk melakukan kesalahan"
+    ],
+    "medium": [
+      "menarik",
+      "menyenangkan",
+      "variasi",
+      "antusias"
+    ],
+    "weak": [
+      "mengerjakan lembar kerja",
+      "mendengarkan penjelasan",
+      "instruksional tegar"
+    ]
+  },
+  "kolaborasi": {
+    "strong": [
+      "diskusi",
+      "kolaborasi",
+      "berbagi peran",
+      "tanya temanmu",
+      "kerja tim",
+      "mitra belajar",
+      "fasilitasi",
+      "tutor sebaya",
+      "diskusi kelompok",
+      "diskusi sejawat",
+      "umpan balik teman",
+      "wawancara pakar",
+      "kolaborasi kelompok",
+      "berdiskusi kelompok",
+      "peer-teaching",
+      "kemitraan kolaboratif"
+    ],
+    "medium": [
+      "kelompok",
+      "berpasangan",
+      "berdiskusi",
+      "kerja sama"
+    ],
+    "weak": [
+      "individu",
+      "sendiri-sendiri",
+      "kompetitif"
+    ]
+  }
+}

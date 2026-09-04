@@ -1,0 +1,75 @@
+{
+  "linking": {
+    "strong": [
+      "hubungkan dengan",
+      "kaitan",
+      "integrasi",
+      "ingatkah kamu",
+      "transfer pengetahuan",
+      "lintas mapel",
+      "pemahaman utuh",
+      "seperti dalam kehidupan sehari-hari",
+      "mengapa ini penting",
+      "menghubungkan dengan materi sebelumnya",
+      "sintesis",
+      "jembatan eksplisit",
+      "lintas disiplin ilmu"
+    ],
+    "medium": [
+      "berkaitan",
+      "berhubungan",
+      "relevan",
+      "keterkaitan"
+    ]
+  },
+  "realworld": {
+    "strong": [
+      "masalah nyata",
+      "kehidupan sehari-hari",
+      "solusi lingkungan",
+      "kearifan lokal",
+      "isu global",
+      "aplikasi praktis",
+      "di masyarakat",
+      "proyek nyata",
+      "aplikasi di lingkungan rumah",
+      "analisis perbandingan",
+      "isu nyata di lingkungan sekitar",
+      "koneksi dunia nyata"
+    ],
+    "medium": [
+      "contoh nyata",
+      "pengalaman",
+      "praktik",
+      "penerapan"
+    ]
+  },
+  "asesmen": {
+    "strong": [
+      "proyek",
+      "portofolio",
+      "unjuk kerja",
+      "asesmen diri",
+      "penilaian sejawat",
+      "umpan balik konstruktif",
+      "rubrik performa",
+      "peer assessment",
+      "refleksi diri",
+      "asesmen otentik",
+      "performa",
+      "produk"
+    ],
+    "medium": [
+      "presentasi",
+      "demonstrasi",
+      "praktikum"
+    ],
+    "weak": [
+      "ujian",
+      "tes",
+      "kuis objektif",
+      "pilihan ganda",
+      "tes objektif"
+    ]
+  }
+}

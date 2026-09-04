@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Gemini-like clean light aesthetic */
+  --navy-950: #f8fafc; /* Main background */
+  --navy-900: #ffffff; /* Surface / Cards */
+  --navy-800: #f1f5f9; /* Subtle containers / Hover */
+  --navy-750: #eaf0f6; /* Intermediate */
+  --navy-700: #e2e8f0; /* Borders */
+  --navy-600: #cbd5e1; /* Stronger borders */
+  
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  
+  /* Accent colors */
+  --violet-500: #8b5cf6;
+  --teal-400: #2dd4bf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--navy-950);
+  color: var(--text-primary);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #8b5cf6; }
+
+/* Smooth transitions */
+* { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+@layer components {
+  .card {
+    @apply bg-white/80 backdrop-blur-xl border border-slate-200 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)];
+  }
+  .btn-primary {
+    @apply bg-gradient-to-br from-violet-600 to-cyan-500 hover:from-violet-500 hover:to-cyan-400 text-white font-semibold px-5 py-2.5 rounded-xl shadow-md transition-all duration-200 active:scale-95;
+  }
+  .btn-secondary {
+    @apply bg-white hover:bg-slate-50 text-slate-700 font-medium px-5 py-2.5 rounded-xl border border-slate-200 shadow-sm transition-all duration-200;
+  }
+  .input-field {
+    @apply w-full bg-white border border-slate-300 text-slate-900 placeholder-slate-400 rounded-xl px-4 py-3 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500 transition-all shadow-sm;
+  }
+  .badge-deep-learning {
+    @apply bg-violet-100 text-violet-700 border border-violet-300 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-bukan {
+    @apply bg-slate-100 text-slate-700 border border-slate-300 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-baik {
+    @apply bg-teal-100 text-teal-700 border border-teal-300 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-cukup {
+    @apply bg-amber-100 text-amber-700 border border-amber-300 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-kurang {
+    @apply bg-red-100 text-red-700 border border-red-300 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+  .badge-csv {
+    @apply bg-blue-100 text-blue-700 border border-blue-300 text-xs font-semibold px-2.5 py-1 rounded-full;
+  }
+}
+
+/* DLI keyword highlight classes */
+.highlight-green  { background-color: rgba(45, 212, 191, 0.25); color: #0d9488; border-radius: 3px; padding: 0 2px; }
+.highlight-red    { background-color: rgba(248, 113, 113, 0.25); color: #b91c1c; border-radius: 3px; padding: 0 2px; }
+.highlight-blue   { background-color: rgba(96, 165, 250, 0.25);  color: #1d4ed8; border-radius: 3px; padding: 0 2px; }
+.highlight-yellow { background-color: rgba(251, 191, 36, 0.25);  color: #b45309; border-radius: 3px; padding: 0 2px; }

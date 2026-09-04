@@ -1,0 +1,189 @@
+Deep Dive Learning: An Integrated Multimodal AI-IoT System for Deep Learning Pedagogical Decision in Elementary Schools
+Muhammad Hanif 
+Primary School Education Department
+Universitas Pendidikan Indonesia
+Bandung, Indonesia
+muhammadhanif@upi.eduOrcid: 0000-0003-4132-9788
+Dian Asmarajati
+Informatics Engineering Department
+Universitas Sains Al Qur’an
+Wonosobo, Indonesia
+ diansamarajati@unsiq.ac.id
+Orcid: 0009-0005-1026-475X 
+Budi Setiawan
+Educational Technology Department
+Universitas Pendidikan Indonesia
+Bandung, Indonesia
+budi_setiawan@upi.eduOrcid: 0000-0001-5371-8129
+Iman Ahmad Ihsanuddin
+Informatics Engineering Department
+Universitas Sains Al Qur’an
+Wonosobo, Indonesia
+ imanahmadihsan@unsiq.ac.id
+Orcid: 0000-0001-8482-1823
+Aan Khosihan
+Social Sciences Education
+Universitas Pendidikan Indonesia
+Bandung, Indonesia
+ aankhosihan@upi.edu
+Orcid: 0000-0002-7483-6527
+Tegar Baradika
+Informatics Engineering Department
+Universitas Sains Al Qur’an
+Wonosobo, Indonesia
+ tegar@unsiq.ac.id
+Orcid: 0000-0001-8482-1823
+Abstract—Transformasi pendidikan nasional Indonesia melalui pendekatan Pembelajaran Mendalam (Deep Learning) yang berprinsip pada Mindful, Meaningful, dan Joyful memerlukan sistem supervisi akademik yang objektif dan berbasis bukti (evidence-based). Namun, praktik supervisi konvensional masih bersifat administratif dan rentan terhadap subjektivitas observer. Penelitian Research and Development (R&D) ini bertujuan untuk mengembangkan dan menguji efektivitas "Deep Dive Learning", sebuah sistem cerdas berbasis Artificial Intelligence (AI) dan Internet of Things (IoT) untuk melakukan triangulasi otomatis antara dokumen perencanaan pembelajaran (RPP) dan realita video kelas secara real-time penerapan deep learning di SD. Sistem ini memanfaatkan Natural Language Processing (NLP) untuk mengaudit teks RPP berdasarkan rubrik khas Pembelajaran Mendalam, serta Computer Vision (CV) dan Audio Analysis untuk mengotomatisasi observasi kelas multimodal. Hasil pengujian menunjukkan bahwa sistem memiliki reliabilitas tinggi dalam mendeteksi keselarasan (alignment) antara perencanaan pedagogi dan implementasi aktual di kelas. Sistem ini berfungsi sebagai Decision Support System (DSS) bagi kepala sekolah untuk mengoptimalkan kepemimpinan instruksional dan mentransformasi peran guru menjadi aktivator pembelajaran mendalam di sekolah dasar.
+Keywords—Deep Learning, Artificial Intelligence, Internet of Things, NLP, Computer Vision, Academic Supervision.
+Introduction
+Indonesia saat ini menghadapi tantangan krisis mutu pembelajaran yang krusial. Berdasarkan data PISA 2022, kemampuan literasi, numerasi, dan berpikir tingkat tinggi (Higher Order Thinking Skills/HOTS) peserta didik Indonesia masih berada di bawah rata-rata internasional, di mana 99% murid hanya mampu menjawab soal level rendah (LOTS). Merespons fenomena tersebut, Kementerian Pendidikan Dasar dan Menengah meluncurkan Naskah Akademik Pembelajaran Mendalam (2025) sebagai pendekatan utama untuk melahirkan lulusan yang memiliki 8 dimensi kompetensi utuh. Pembelajaran Mendalam (PM) didefinisikan sebagai pendekatan yang memuliakan individu dengan menekankan pada suasana belajar yang Berkesadaran (Mindful), Bermakna (Meaningful), dan Menggembirakan (Joyful) melalui olah pikir, olah hati, olah rasa, dan olah raga. 
+Meskipun cetak biru kurikulum dan modul ajar khas PM telah disusun oleh Pusat Kurikulum dan Pembelajaran (Puskurjar), kesenjangan besar tetap terjadi pada tataran implementasi di ruang kelas. Supervisi akademik yang dilakukan oleh kepala sekolah dan pengawas saat ini masih terjebak pada pemeriksaan dokumen administratif dan observasi manual berskala kecil yang rentan bias subjektif. Padahal, keberhasilan difusi PM di sekolah sangat bergantung pada ketepatan pedagogi dan model evaluasi baru yang holistik. 
+Oleh karena itu, penelitian ini hadir untuk memecahkan knowledge gap tersebut dengan mengembangkan Sistem Deep Dive Learning. Kebaruan (novelty) penelitian ini terletak pada sistem arsitektur AI-IoT multimodal yang secara otomatis mampu melakukan triangulasi data: mendeteksi parameter internalisasi (mindful), koneksi kontekstual (meaningful), dan ekspresi interaksi (joyful) langsung dari naskah RPP dan rekaman video kelas secara real-time.
+METHODS
+Design
+Penelitian ini menggunakan metode Research and Development (R&D). Mengingat sistem yang dikembangkan saat ini beroperasi dalam dua fitur utama yang terpisah, desain pengembangan difokuskan pada dua jalur (dual-track) fungsional yaitu (a) Fitur Sisi Perencanaan (NLP Engine) yang berfokus pada pengembangan sistem berbasis teks untuk mengaudit dokumen RPP/Modul Ajar; dan (b) Fitur Sisi Pelaksanaan (AI-IoT Video-Audio Engine) yang berfokus pada pengembangan sistem analisis otomatis berbasis hardware edge computing di kelas
+Procedure
+Prosedur penelitian ini dilaksanakan melalui tahapan sistematis sebagai berikut:
+Tahap Analisis & Desain 
+Pada tahap ini, disusun instrumen rubrik penilaian khas Deep Learning (Mindful, Meaningful, Joyful) bersama para ahli Teknologi Pendidikan. Rubrik ini kemudian ditransformasikan menjadi daftar kata kunci (Key Descriptors) tekstual dan parameter teknis sensor. Kemudian dikembangkan mesin NLP (Natural Language Processing) yang dilatih khusus menggunakan korpus pendidikan Indonesia untuk memindai dokumen RPP/Modul Ajar guru. Algoritma melakukan ekstraksi Kata Kerja Operasional (KKO) untuk mengaudit level kognitif (menargetkan PISA level 4-6) dan mencocokkan teks dengan Key Descriptors khas Deep Learning yang disusun.  
+Mindful: Mendeteksi frasa terkait aktivasi fokus, hening sejenak, dan metakognisi. 
+Meaningful: Mendeteksi strategi linking & transfer konsep serta relevansi isu nyata. 
+Joyful: Mendeteksi skenario permainan, kolaboratif dan ruang aman untuk salah. 
+Perhitungan nilai perencanaan dilakukan menggunakan Logika Pembobotan Otomatis, memberikan bobot premium pada aspek Metakognisi (25%) dan Linking & Transfer (25%) karena menjadi indikator utama kedalaman berpikir kognitif murid.
+Tahap Pengembangan Produk 
+Tahap ini berfokus pada pengembangan sistem secara terpisah. Fitur 1 berbentuk algoritma NLP dengan logika pembobotan nilai otomatis (Metakognisi 25%, Linking 25%, Aktivator 20%, Psychological Safety 15%, dan Digital 15%).
+Fitur 2 berbentuk perangkat IoT di ruang kelas menggunakan unit pemroses cerdas (Edge Computing) mengonfigurasi perangkat keras IoT (NVIDIA Jetson, IP Camera, mikrofon array) di Sekolah Dasar mitra untuk merekam dan mengekstrak parameter pergerakan visual serta audio kelas. Data video dan audio diproses secara paralel melalui tiga jaringan saraf tiruan (Neural Networks) yaitu (a) Computer Vision (CV) dengan Gaze Tracking (atensi visual murid), Posture Analysis (fokus fisik), dan Flexible Seating Detection (perubahan formasi meja-kursi kolaboratif). (b) Audio Analysis: dengan menerapkan Speaker Diarization untuk memisahkan suara guru vs murid guna menghitung Talk-Time Ratio secara objektif, serta Acoustic Event Detection untuk menangkap frekuensi tawa dan tepuk tangan murid (Joyful climate).
+Tahap Pengujian Efektivitas (Triangulasi Otomatis & Dashboard DSS)
+Tahap ini menguji performa fitur NLP menggunakan sampel RPP dan menguji performa fitur AI-IoT menggunakan video pembelajaran SD dalam mendeteksi Talk-Time Ratio dan pergerakan guru secara terpisah di kelas. Sistem kemudian mengintegrasikan output analisis RPP dan video melalui Cross-Reference Engine. Hasilnya divisualisasikan secara real-time pada dashboard berbasis web untuk Kepala Sekolah sebagai instrumen Decision Support System (DSS). Pengujian efektivitas dilakukan melalui uji ground truth (membandingkan akurasi pembacaan AI dengan penilaian manual ahli) dan uji coba lapangan di Sekolah Dasar mitra. 
+Data Collecting 
+Data dalam penelitian ini dikumpulkan dari dua sumber utama yang terpisah sesuai dengan fiturnya. Data perencanaan (Teks), berupa file dokumen RPP/Modul Ajar dalam format digital (.docx/.pdf) yang diunggah oleh guru SD hasil dari diklat Deep Learning dan RPP pembanding (kontrol/non deep learning) dari luaran mata kuliah perencanaan pembelajaran di SD. Data yang diekstrak adalah kemunculan Kata Kerja Operasional (KKO) dan frasa-frasa kunci yang mewakili indikator deep learning. Data Pelaksanaan (Multimodal): diperoleh melalui perangkat IoT di kelas saat pembelajaran aktual berlangsung. Data berupa data Audio dari rekaman suara berformat .wav untuk memisahkan saluran suara guru dan murid, serta data visual dari rekaman video berformat .mp4 untuk melacak orientasi mata (gaze tracking), posisi spasial guru, dan konfigurasi tempat duduk murid. 
+Data Analysis 
+Karena kedua fitur belum terintegrasi secara otomatis, analisis data dilakukan melalui tiga langkah berikut: 
+Analisis Data Perencanaan (Fitur 1) 
+Teks RPP dianalisis secara otomatis oleh algoritma NLP menggunakan teknik String Matching dan analisis semantik berdasarkan daftar Key Descriptors. Sistem menghitung total nilai menggunakan rumus skor terbobot untuk menghasilkan Deep Learning Index (DLI) versi perencanaan. 
+Analisis Data Pelaksanaan (Fitur 2)
+Fragmen video dan audio dianalisis oleh model Computer Vision dan Audio Diarization. AI menghitung persentase Talk-Time Ratio (Guru vs Murid) serta mendeteksi ada/tidaknya perubahan formasi kelas (Flexible Seating). Output-nya menghasilkan skor performa realita kelas. 
+Analisis Triangulasi Manual & Statistik (Sintesis Peneliti)
+Peneliti menjembatani keterpisahan sistem dengan memasukkan skor hasil Fitur 1 (RPP) dan Fitur 2 (Video) ke dalam Matriks Keselarasan Pedagogi (Pedagogical Alignment Matrix). Jika skor RPP tinggi pada poin "Diskusi Kelompok" tetapi skor Video menunjukkan Talk-Time guru mencapai 90%, peneliti menyimpulkan terjadi ketidakselarasan (Misalignment). Dan data olahan dari perencaan dan pelaksaan juga dianalisis secara kauntitatif menggunakan statistik yang relevan. 
+Karena kedua fitur belum terintegrasi secara otomatis, analisis data dilakukan melalui tiga langkah berikut
+Proposed Modeling 
+Results and Discussion
+Audit Perencanaan Pembelajaran berbasis Rule-Based & Weighted Keyword Matching (Tahap Analisis & Desain)
+Pengembangan fitur pertama difokuskan pada otomatisasi audit dokumen perencanaan (Modul Ajar/RPS) Sekolah Dasar menggunakan pendekatan Rule-Based & Weighted Keyword Matching. Sistem ini secara otomatis mengevaluasi kualitas pedagogis dari dokumen teks tanpa menggunakan Artificial Neural Network (ANN) yang berat, melainkan menggunakan algoritma berbasis aturan (rules) yang mengkuantifikasi indikator pembelajaran mendalam secara efisien ke dalam skor Deep Learning Index (DLI). Uji coba fitur dilakukan terhadap [X] sampel dokumen dengan alur pemrosesan data (tabel preprocessing, ekstraksi berbasis case-insensitive, hingga pembatasan 4000 karakter awal guna optimalisasi komputasi). 
+Akurasi Deteksi DLI Analyzer vs Penilaian Pakar
+Untuk menguji kelayakan instrumen DLI Analyzer ini, dilakukan uji kesepakatan (ground truth) antara skor otomatis sistem dengan penilaian manual oleh pakar Teknologi Pendidikan. Hasil uji menunjukkan tingkat akurasi kesesuaian sebesar [X]% dengan nilai koefisien Kappa sebesar [X] (Kategori: Sangat Kuat/Cukup). Sistem terbukti konsisten memetakan 5 aspek pedagogis utama, yaitu: Mindful (25%), Meaningful (25%), Joyful (20%), Pedagogis (15%), dan Digital (15%). 
+Analisis Mekanisme Pembobotan dan Deteksi Level Kekuatan Teks
+Keunggulan utama dari DLI Analyzer yang dikembangkan adalah kemampuannya dalam mengklasifikasikan Kata Kerja Operasional (KKO) di dalam teks perencanaan ke dalam 3 level kekuatan guna menyaring kedalaman kognitif secara objektif: 
+Strong (+4 poin): Mengindikasikan arah Pembelajaran Mendalam (Deep Learning), seperti KKO level tinggi (menganalisis, menyintesis, atau mencipta) yang selaras dengan target PISA level 4–6. 
+Medium (+3 poin): Mengindikasikan aktivitas pembelajaran netral atau level menengah. 
+Weak (-2 poin): Mengindikasikan pembelajaran dangkal (Surface Learning), dicirikan oleh KKO tingkat dasar seperti menghafal, menyalin, atau mencatat pasif yang bersifat mengurangi akumulasi poin dasar. 
+Hasil Deteksi Jargon Administratif melalui Penalti Dominasi (Dominance Penalty)
+Eksperimen sistem menunjukkan bahwa algoritma berbasis aturan ini sukses mengidentifikasi dokumen RPP/RPS yang sekadar menggunakan "jargon" aktif namun langkah pembelajarannya masih bersifat tradisional (teacher-centered). Melalui fitur Penalti Dominasi (Dominance Penalty), jika sebuah dokumen didominasi oleh aktivitas bermutu rendah (Weak), skor aspek tersebut otomatis dipotong secara progresif: 
+Jika rasio kata kunci Weak > 50%, total skor pada aspek tersebut dipotong hingga tinggal 40% (dikali 0.4). 
+Jika rasio kata kunci Weak > 30%, total skor dikurangi hingga tinggal 70% (dikali 0.7). 
+Lebih jauh, penerapan aturan Batas Absolut (Absolute Cap) berhasil mengunci skor maksimal suatu aspek pada batas plafon 40% apabila kata kunci Weak muncul  kali, tanpa memedulikan seberapa banyak kata kunci Strong yang disisipkan oleh guru di dalam dokumen. Mekanisme ini berhasil memicu peringatan (alerts) serta menyusun rekomendasi parafrase otomatis yang akurat di dalam web. 
+Distribusi Kesiapan Dokumen Berdasarkan Kategorisasi Akhir DLI
+Berdasarkan visualisasi dan kalkulasi akhir sistem, kesiapan dokumen pembelajaran diklasifikasikan ke dalam 3 tingkat kesiapan, yaitu: 
+Siap Implementasi (Skor DLI ), 
+Perlu Perbaikan (Skor DLI ), dan 
+Perlu Revisi Besar (Skor DLI ). 
+Dari sampel yang diuji, sebanyak [X] dokumen masuk kategori Siap Implementasi, [X] dokumen Perlu Perbaikan, dan [X] dokumen Perlu Revisi Besar.
+Masukan gambar DLI disini
+Gambar X menyajikan tampilan antarmuka (interface) grafik hasil pemindaian DLI Analyzer pada dokumen perencanaan pembelajaran yang diunggah oleh guru. Dasbor web ini secara visual mengonversi hasil perhitungan algoritma berbasis aturan (rule-based) menjadi infografis interaktif, yang mencakup persentase capaian kuantitatif pada 5 aspek pedagogis utama (3M, Pedagogis, dan Digital). Melalui visualisasi ini, sistem tidak hanya menampilkan skor akhir kualitatif dokumen (seperti label 'Siap Implementasi' atau 'Perlu Perbaikan'), tetapi juga secara otomatis menandai teks asli menggunakan fitur highlighting warna serta menyajikan kotak Alert (Peringatan) apabila aturan Penalti Dominasi (Dominance Penalty) dan Batas Absolut (Absolute Cap) terpicu akibat penggunaan instruksi tradisional yang terlalu dominan
+Otomatisasi Observasi Kelas berbasis Multimodal Computer Vision & Audio Analytics (Tahap Implementasi & Evaluasi)
+Pengembangan fitur kedua difokuskan pada otomatisasi observasi kelas nyata menggunakan pendekatan Multimodal Computer Vision (CV) & Audio Analytics. Sistem ini, yang diberi nama EduClassify, secara otomatis mengevaluasi kualitas implementasi pedagogis di ruang kelas Sekolah Dasar tanpa bergantung pada penilaian subjektif penilai manusia, melainkan memanfaatkan arsitektur multi-modal AI secara paralel untuk mengkuantifikasi indikator pembelajaran mendalam langsung dari rekaman video-audio. Uji coba fitur dilaksanakan terhadap [X] sampel sesi rekaman observasi kelas tatap muka Sekolah Dasar dengan alur pemrosesan data (pemisahan otomatis alur data audio & video, ekstraksi frame, identifikasi vokal, hingga sinkronisasi data ke database lokal untuk merender timeline serta heatmap interaktif di dasbor web). 
+Akurasi Pipeline Multi-Model vs Penilaian Pakar
+Untuk menguji kelayakan instrumen EduClassify ini, dilakukan uji kesepakatan (ground truth) antara metrik kalkulasi otomatis sistem dengan penilaian manual terstruktur oleh pakar Teknologi Pendidikan dan Teknik Informatika. Hasil uji menunjukkan tingkat akurasi kesesuaian sebesar [X]% dengan nilai koefisien reliabilitas Cronbach’s Alpha sebesar [X] (Kategori: Acceptable). Sistem terbukti konsisten memetakan 3 dimensi inti Pembelajaran Mendalam (3M) yang digagas Ki Hadjar Dewantara dan diadopsi Kurikulum Merdeka, yaitu: Mindful Learning, Meaningful Learning, dan Joyful Learning. 
+Analisis Mekanisme Integrasi Model AI dan Deteksi Indikator Perilaku
+Keunggulan utama dari perancangan arsitektur EduClassify adalah kemampuannya dalam mengintegrasikan empat model kecerdasan buatan secara simultan guna menyaring aktivitas instruksional dan ekspresi murid secara objektif: 
+YOLOv8 & MediaPipe (Mindful & Meaningful): Digunakan untuk deteksi manusia, analisis postur kerangka tubuh (33 keypoints landmark), serta pelacakan formasi duduk untuk mengidentifikasi keberadaan aktivitas diskusi kelompok aktif. 
+DeepFace & Gaze Tracking (Joyful & Mindful): Bertanggung jawab mengklasifikasikan ekspresi emosi wajah murid secara instan (mendeteksi rasa senang/antusias) sekaligus mendeteksi arah pandangan mata murid ke papan tulis atau guru sebagai metrik fokus perhatian. 
+Pyannote Audio & VAD (Voice Activity Detection): Memproses trek suara untuk melakukan Speaker Diarization (pemisahan vokal guru dan siswa) serta mengidentifikasi kualitas keheningan produktif kelas maupun deteksi akustik momen tawa/tepuk tangan. 
+Deteksi Dominasi Kelas Pasif melalui Rasio Waktu Bicara (Talk-Time Ratio Penalty)
+Eksperimen sistem di lapangan sukses mengidentifikasi kecenderungan kelas yang masih bersifat tradisional (teacher-centered) melalui perhitungan Talk-Time Guru vs Siswa. Melalui pengujian ini, model AI menemukan korelasi positif yang sangat kuat () antara porsi waktu bicara siswa dengan skor dimensi Meaningful, membuktikan secara empiris bahwa otonomi suara siswa adalah penggerak utama kelas yang bermakna. 
+Sama halnya dengan Fitur 1, sistem ini mendeteksi bias di mana guru mendominasi komunikasi verbal secara agresif. Jika persentase waktu bicara guru melampaui batas standar ideal Pembelajaran Mendalam (guru idealnya berada pada rentang 30-40%), sistem secara otomatis mengategorikan sesi tersebut sebagai "pembelajaran pasif". Selisih skor interaksi ini menjadi indikator tunggal paling berdampak yang memicu sistem untuk merender peringatan (alerts) deviasi komunikasi pada dasbor pengawas. 
+Profil Kesiapan Praktik Kelas Berdasarkan Kategorisasi Akhir EduClassify
+Berdasarkan visualisasi dan perhitungan akhir algoritma agregasi data, kualitas implementasi 3M pada realita kelas diklasifikasikan ke dalam 3 tingkat kesiapan praktik, yaitu: 
+Deep Learning Ideal: (Skor Rata-rata 3M ), 
+Cukup Baik / Terpenuhi Minimal: (Skor Rata-rata 3M ), dan 
+Perlu Peningkatan / Revisi Praktik: (Skor Rata-rata 3M ). 
+Dari total sesi observasi nyata yang diuji oleh sistem, sebanyak [X] kelas masuk dalam kategori Deep Learning Ideal, [X] kelas berada pada kategori Cukup Baik, dan [X] kelas diklasifikasikan pada kategori Perlu Peningkatan. Sistem juga berhasil mengidentifikasi keterbatasan teknis penempatan kamera sudut belakang kelas (rear-angle) yang memengaruhi akurasi pembacaan DeepFace pada pilar Joyful dan Mindful, yang kemudian diubah menjadi rekomendasi konfigurasi multi-kamera untuk penelitian lanjutan
+Sintesis Perbandingan dan Triangulasi Manual Antar-Fitur (Pedagogical Alignment Matrix)
+Mengingat arsitektur teknologi dari kedua fitur cerdas yang dikembangkan—DLI Analyzer (Fitur 1) dan EduClassify (Fitur 2)—saat ini masih beroperasi secara terpisah dan belum terintegrasi otomatis secara real-time, proses jembatan analitik dilakukan secara manual oleh peneliti. Peneliti menggunakan instrumen Matriks Keselarasan Pedagogis (Pedagogical Alignment Matrix) untuk menyandingkan luaran skor kuantitatif perencanaan di atas kertas dengan data empiris implementasi aktual di dalam kelas. 
+Pola Keselarasan (Alignment Index) Perencanaan vs Pelaksanaan
+Melalui penyandingan manual dari [X] sampel guru Sekolah Dasar yang diuji menggunakan kedua fitur, peneliti berhasil memetakan tiga pola tipologi keselarasan instruksional: 
+Pola Selaras Tinggi (High Alignment): Ditemukan pada [X] sampel guru, di mana dokumen Modul Ajar memperoleh kategori "Siap Implementasi" pada Fitur 1 (Skor DLI ) dan realita kelasnya terdeteksi masuk dalam kategori "Deep Learning Ideal" pada Fitur 2 (Skor 3M ). Teks langkah-langkah student-centered yang dirancang terbukti tereksekusi secara konsisten di lapangan. 
+Pola Semu / Administratif (Jargon Jargon Jargon): Ditemukan pada [X] sampel guru, di mana RPP berhasil meraih skor "Siap Implementasi" berkat penggunaan kata kerja Strong (+4). Namun, ketika RPP tersebut dikonfrontasikan dengan Fitur 2, dasbor EduClassify justru mendeteksi Talk-Time guru mencapai lebih dari 75% (Kategori: Pembelajaran Pasif). Pola ini menunjukkan adanya celah antara kemahiran administratif guru dengan keterampilan praktisnya sebagai aktivator. 
+Pola Perlu Perbaikan Total (Low Alignment): Ditemukan pada [X] sampel guru, di mana dokumen ajar masuk kategori "Perlu Revisi Besar" (Skor DLI ) dan visualisasi video kelasnya terperosok ke dalam kategori "Perlu Peningkatan" (Skor 3M ). 
+Mekanisme Identifikasi Gap Kompetensi Guru untuk Kepala Sekolah
+Pemisahan fungsional kedua fitur ini—meski secara teknologi menjadi keterbatasan—justru memberikan kontribusi taktis yang unik bagi Kepala Sekolah sebagai instrumen pengambilan keputusan (Decision Support System). Melalui penyandingan lembar cetak skor DLI Analyzer dan infografis interaktif EduClassify, Kepala Sekolah dapat mengidentifikasi letak hambatan (bottleneck) profesionalisme guru secara spesifik: 
+Jika letak kelemahan guru berada di Fitur 1, maka guru tersebut membutuhkan intervensi berupa pelatihan pemahaman konsep kurikulum, pemetaan taksonomi kognitif tingkat tinggi, serta desain skenario metakognitif. 
+Jika letak kelemahan guru berada di Fitur 2, maka intervensi difokuskan pada penguatan manajemen kelas klinis, pengolahan Talk-Time interaktif, pengaturan flexible seating, serta pembimbingan taktis cara memfasilitasi kolaborasi aktif di lapangan. 
+Sintesis manual ini membuktikan bahwa kombinasi dua fitur cerdas yang terpisah ini tetap mampu menghasilkan data audit pedagogis longitudinal yang komprehensif, objektif, dan reproducible untuk mentransformasi supervisi akademik konvensional di Sekolah Dasar. 
+Discussion
+Preliminary modelling results showed that case engagement was excluded from the FCBL analysis model, indicating that both the experiment and the control had no difference in case engagement, as both used the basic case-based learning model. This shows that the advantage of FCBL is obtained from high LMS activity and also pre-task compliance, which is not owned by the original model. This combination of flipped classroom and case-based learning supports the elaboration of syntax from several studies [10][13][14][17], while complementing the evidence of the dominance of the basic concept of CBL, which becomes dominant in this model combination [11][16][18][19][20]. 
+Likewise, it is also evident in the independent variable ASRL, where two indicators are excluded, indicating that in a blended learning setting, the main strengths needed are goal-setting attribution, self-monitoring, and time management. This supports several previous studies [29]. In the flipped learning setting, learners tend not to need help seeking and self-evaluation because the teaching materials are available in the LMS, and the evaluation results are recorded in real time [30]. 
+Based on the results of the inner model analysis, both Flipped-Case-Based Learning and Academic Self-Regulation have a significant effect on Instructional Design Skill, which indicates their contribution in explaining the variance of learning design skills. However, Academic Self-Regulation did not significantly moderate the relationship, despite producing a positive value, indicating that the effect of FCBL will be more optimal for students with high academic self-regulation [31]. This effect could be the overall predictive power of the model considered [32][33].
+Although the interaction between FCBL and ASRL is statistically above the traditional threshold, these results indicate a borderline effect or positive trend. This indicates that students with higher levels of academic self-regulation tend to benefit more optimally in developing instructional design skills through the FCBL model, consistent with findings that academic self-regulation enhances performance in flipped environments [33]. However, because the significance value is not far from the threshold, this model has proven to be inclusive and effective in improving student competence at various levels of academic self-regulation. This aligns with evidence that a well-structured technology-based curriculum can bridge gaps in learner independence, effectively developing professional competence among students with varying self-regulation levels [29][30].
+Overall, the synergy between FCBL, LMS, and ASRL reinforces the view that structured digital environments can effectively mitigate independent learning constraints. Integrating active learning strategies within online-based flipped models significantly enhances student engagement and motivation [34]. Furthermore, providing clear activity navigation through an LMS is essential for managing cognitive load during the post-flipped phase [35]. These combined factors create a conducive ecosystem that specifically facilitates the development of applicable instructional design skills.
+Conclusion 
+This study shows that the LMS-based Flipped-Case-Based Learning (FCBL) model significantly improves the instructional design skills of pre-service teachers. The use of case-based syntax in pre-class, in-class, and post-class stages encourages active engagement and deep reflection. Learning Management System (LMS) is proven to be effective as a supporting media in organising the learning flow, presenting interactive materials, as well as facilitating discussions and case-based assessments flexibly. In addition, it was found that academic self-regulation contributed to instructional design skills but was not significant enough as a moderator to strengthen the effect of FCBL on instructional design skills, although students with high levels of self-regulation benefited more from this model. These findings corroborate the importance of integrating case-based strategies in the flipped model for the development of teachers’ instructional design skills.
+Suggestions 
+Teacher education institutions are advised to more widely integrate the LMS-based FCBL model into practice and learning design courses. It is also important to strengthen self-regulation competencies through training or academic mentoring, so that students can maximise the benefits of technology-based independent learning and real cases.
+Limitations 
+Limited to the number of participants and a single institution context, this study’s results require broader generalization through future research across diverse teacher education programs. Furthermore, as quantitative data may not fully capture the depth of the learning process, future studies should incorporate qualitative or mixed-methods approaches to investigate the underlying dynamics of the FCBL model.
+Acknowledgment
+This publication is fully supported by the Centre for Funding and Assessment of Higher Education (PPAPT) and the Indonesia Endowment Funds for Education (LPDP), as the first author is an awardee of the BPI Scholarship for Doctoral Program in Universitas Negeri Surabaya.
+References
+W. Sumarni, S. Sudarmin, and S Kadarwati, “Creative skill improvement of the teacher candidates in designing learning programs through a project-based blended learning,” Journal of Physics: Conference Series, vol. 1918 no. 032026, 2021.
+A. Yudantoko, “Students’ perspective: instructional design and technology that should be done in vocational teacher education,” Journal of Physics: Conference Series, vol. 1833 no. 012031, 2021.
+S. Kickbusch, N. Wright, J. Sternberg, and L. Dawes, “Rethinking learning design: Reconceptualizing the role of the learning designer in pre-service teacher preparation through a Design-led Approach,” The International Journal of Design Education, vol. 14 no. 4, pp. 29–45, 2020
+G. Ali, A. Hasibuan, V. Vitriani, and A. Amril, “Development of a case based learning (CBL) model based on a knowledge management system to improve students’ critical thinking skills,” Al-Ishlah: Jurnal Pendidikan, vol. 16 no. 3, pp. 3029-3040, 2024.
+D. Ktoridou, E. Doukanari, E. Epaminonda and A. Karayiannis, “Case-based learning: Offering a premier targeted learning experience for technology management students,” 2018 IEEE Global Engineering Education Conference (EDUCON), pp. 1781-1786, 2018.
+W. Yang, X. Zhang, X. Chen, J. Lu, and F. Tian, “Based case based learning and flipped classroom as a means to improve international students’ active learning and critical thinking ability,” BMC Medical Education,  vol. 24 no. 759, 2024.
+Z. Zainuddin, and S. H. Halili, “Flipped classroom research and trends from different fields of study”, International Review of Research in Open and Distributed Learning, vol. 17, no. 3, pp. 313-340, 2016.
+C. Y. Chen, “Flipped classroom with case-based for improving preservice teachers’ classroom management learning outcomes,” Teaching and Teacher Education, vol. 152 no. 104785, 2024. 
+G. Xu, Y. Lin, Y. Ye, W. Wu, X. Zhang, and H. Xiao, “Combination of concept maps and case-based learning in a flipped classroom: A mixed-methods study,’ Nurse Education in Practice, vol. 76 no. 103918, 2024.
+C. Ding, Q. Wang, J. Zou, and K. Zhu, “Implementation of flipped classroom combined with case- and team-based learning in residency training,” Advances in Physiology Education, vol. 45, pp. 77–83, 2021.
+B. Hutapea, and R. N. Tuadah, “Flipped learning berbasis case study terhadap kreatifitas berpikir dan hasil belajar mahasiswa di Universitas Sulawesi Barat,” Jurnal Teknologi Pendidikan, vol. 16 no. 2, pp. 93-101, 2023.
+B. J. Zimmerman, “Investigating self-regulation and motivation: Historical background, methodological developments, and future prospects,” American Educational Research Journal, vol. 45 no. 1, pp. 166–183, 2008.
+Z. Xu, Y. Zhao, B. Zhang, J. Liew, and A. Kogut, “A meta-analysis of the efficacy of self-regulated learning interventions on academic achievement in online and blended environments in K-12 and higher education,” Behaviour & Information Technology, vol.  42 no. 16, pp. 2911–2931, 2022. 
+L. Cai, Y-L. Li, X-Y. Hu, and R. Li, “Implementation of flipped classroom combined with case-based learning: A promising and effective teaching modality in undergraduate pathology education,” Medicine, vol. 101 no. 5, pp. e28782, 2022.
+F. Yang,  W. Lin, and Y. Wang, “Flipped classroom combined with case-based learning is an effective teaching modality in nephrology clerkship,” BMC Medical Education, vol. 21 no. 276, pp. 1-7, 2021.
+J. M. Munoz-Guijosa, E. Chacón, J. Echávarri, A. Díaz, A. Guzmán, and J. P. G. de la Tenaza, “Combining CDIO and case study methodologies in flipped classroom strategies,” Proceedings of the 14th International CDIO Conference, Kanazawa Institute of Technology, pp. 1-11, 2018.
+Q. Qian, Y. Yan, F. Xue, J. Lin, F. Zhang, and J. Zhao, “Coronavirus disease 2019 (COVID-19) learning online: A flipped classroom based on micro learning combined with case-based learning in undergraduate medical students,” Advances in Medical Education and Practice, vol. 12, pp. 835–842, 2021. 
+M. Kolahdouzan, M. Mahmoudieh, M. Rasti, A. Omid, A. Rostami, and N. Yamani, “The effect of case-based teaching and flipped classroom methods in comparison with lecture method on learning and satisfaction of internship students in surgery,” Journal of Education and Healthy Promotion, vol. 9 no. 256, 2020. 
+N. McWhirter, and T. Shealy, “Case-based flipped classroom approach to teach sustainable infrastructure and decision-making,” International Journal of Construction Education and Research, vol. 16 no. 1, pp. 3-23, 2020.
+I. Huda, P. Desriana, S. Safrida, C. Nurmaliah, and M. Muhibbuddin, “Analyzing of using case method based on flipped classroom on student learning outcomes,” Jurnal Penelitian Pendidikan IPA, vol. 9 no. 6, pp. 4103–4108, 2023.
+J. Bergmann, and A. Sams, “The flipped classroom,” CSE, vol. 17 no. 3, pp. 24–27, 2014.
+S. Crowe, K. Cresswell, A. Robertson, G. Huby, A.Avery, and A. Sheikh, “The case study approach,” BMC Medical Research Methodology, vol. 11 no. 100, 2011.
+A. Erskine, M. R. Leenders, and L. A. Mauffette–Leenders, Teaching with Cases. Canada: School of Business Administration, University of Western Ontario, 1981.
+W. Dick, L. Carey, and J. O. Carey, Design of Instruction: The Systematic Design of Instruction (8th edition). Pearson, 2015.
+C. Magno, “Validating the academic self-regulated learning scale with the motivated strategies for learning questionnaire (MSLQ) and learning and study strategies inventory (LASSI),” The International Journal of Educational and Psychological Assessment, vol. 7 no. 2, pp. 56-73, 2011.
+J. F. Hair, G. T. M. Hult, C. Ringle, and M. Sarstedt, A Primer on Partial Least Squares Structural Equation Modeling (PLS-SEM) Second Edition. Sage Publications, 2017.
+C. Fornell, and D. F. Larcker, “Evaluating structural equation models with unobservable variables and measurement error,” Journal of Marketing Research, vol. 18 no. 1, pp. 39-50, 1981.
+J., Henseler, C. M. Ringle, and M. Sarstedt, “A new criterion for assessing discriminant validity in variance-based structural equation modeling,” Journal of the Academy of Marketing Science, vol. 43 no. 1, pp. 115–135, 2015.
+E. Syarif, T. Prastati, A. Gafur, and A. M. Limbong, “Self-regulated learning (SRL) tendencies of educational technology students in online tutorials”, Journal of Learning and Technology, vol. 4 no. 1, pp. 1–6, 2025.
+A. Alfurqan, A. Fakhruddin, S. Narulita, and C. Handrianto, “Fostering self-regulated learning skills through flipped learning strategy projects: an exploration of pre-service teachers’ experiences in Indonesia, “Perspectives of Science and Education, vol. 72 no. 6, pp. 154-170, 2024
+N. H. Kim, H.-J. So, and Y. J. Joo, “Flipped learning design fidelity, self-regulated learning, satisfaction, and continuance intention in a university flipped learning course,” Australasian Journal of Educational Technology, vol. 37 no. 4, pp. 1–19, 2021
+E. N. Al-Mulhim, “Flipped learning, self-regulated learning and learning retention of students with internal/external locus of control,” International Journal of Instruction, vol. 14 no. 1, pp. 827-846, 2021.
+S. Park, and N. H. Kim, “University students’ self-regulation, engagement and performance in flipped learning,” European Journal of Training and Development, vol. 46 no. 1/2, pp. 22-40, 2022.
+J. C. Hong, C. R. Tsai, and K. W. Tai, “Using homework tip-on as a post-flipped learning tool to explore students’ interest, cognition, and reuse intention,” International Journal of Information and Education Technology, vol. 7 no. 2, pp. 124–130, 2017.
+H. Jeong, “Effects of jigsaw strategy into flipped learning on EFL pre-serviced kindergarten teachers’ english attitude and motivation with online-based classroom,” International Journal of Information and Education Technology, vol. 11 no. 11, pp. 509–515, 2021.
+Authors’ background
+Your Name
+Title*
+Research Field
+Personal website
+Muhammad Hanif
+PhD Candidate
+Educational Technology (Learning Media & Language Teaching) 
+Orcid: 0000-0003-4132-9788
+Mustaji
+Full Professor
+Educational Technology (Design Instructional & Learning Model)
+Orcid: 0000-0003-1748-2707
+Fajar Arianto
+Associate Professor
+Educational Technology (Learning Model & Educational Psychology)
+Orcid: 0000-0002-5026-0092
