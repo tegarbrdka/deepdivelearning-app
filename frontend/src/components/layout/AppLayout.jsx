@@ -16,7 +16,6 @@ export default function AppLayout() {
 
   const userNav = [
     { path: '/dashboard', label: t('nav.dashboard'), icon: HomeIcon },
-    { path: '/predict', label: t('nav.uploadPredict'), icon: UploadIcon },
     { path: '/dli-analysis', label: t('nav.dliAnalysis'), icon: DLIIcon },
     { path: '/history', label: t('nav.history'), icon: HistoryIcon },
     { label: t('video3m.navUpload'), divider: true },
