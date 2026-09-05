@@ -30,6 +30,7 @@ export default function AppLayout() {
 
     { label: 'DLI', divider: true },
     { path: '/admin/dli/dashboard', label: t('nav.dliDashboard'), icon: DLIIcon },
+    { path: '/dli-analysis', label: t('nav.dliAnalysis'), icon: DocIcon },
     { path: '/admin/dli/bulk', label: t('nav.dliBulk'), icon: UploadIcon },
     { path: '/admin/dli/analytics', label: t('nav.dliAnalytics'), icon: ChartIcon },
     { path: '/admin/dli/history', label: t('nav.dliHistory'), icon: HistoryIcon },
